@@ -80,6 +80,8 @@ omero_server_config_set:
   omero.policy.binary_access: "+read,+write,-image,-plate"
   # Prevent retrieval of uncached BF data
   omero.pixeldata.fail_if_missing: True
+  # Use 5 pxieldata threads (default: 2)
+  omero.pixeldata.threads: 5
   # Group/User drop down menu
   omero.client.ui.menu.dropdown.colleagues.enabled: False
   omero.client.ui.menu.dropdown.everyone.label: "Public data"
